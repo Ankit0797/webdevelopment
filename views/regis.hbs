@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="i.png" alt="">
+    </div>
+    <div class="container">
+        <h1 class="label">Register</h1>
+        <form class="login_form" action="/regis" method="post" name="form">
+            <div class="font">
+                <label>EmpID:</label>
+                <input autocomplete="off" type="text" name="EmpID" >
+            </div><br>
+            <div class="font">
+                <label>Name:</label>
+                <input autocomplete="off" type="text" name="Name" >
+            </div>
+            <div class="font font2">
+                <label>Password:</label>
+                <input autocomplete="off" type="text" name="Password" >
+            </div>
+            <div class="font font2">
+                <label>CPassword:</label>
+                <input autocomplete="off" type="password" name="CPassword" >
+
+                 <i class="bi bi-eye-slash" id="togglePassword"></i>
+            </div>
+            <button type="submit">Register</button>
+            <p>Already have an account? <a href="/Login">LOGIN FAST</a>.</p>
+        </form>
+    </div>
+</body>
+</html>
